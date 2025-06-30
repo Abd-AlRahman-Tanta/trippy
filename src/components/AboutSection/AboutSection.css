@@ -1,0 +1,13 @@
+#about {
+    padding : 80px 100px;
+    .titles {
+        margin-bottom: 60px;
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}

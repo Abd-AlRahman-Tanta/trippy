@@ -1,0 +1,120 @@
+.container {
+    header {
+        nav {
+            width: 95%;
+            height: 80px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 13px;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            z-index: 1000;
+            transform: translateX(-50%);
+            padding: 0 20px;
+            box-shadow: 0 15px 5px 0 rgba(0, 0, 0, .25);
+            h1 {
+                font-size: 40px;
+            }
+            .right {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 30px;
+                    a {
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 10px;
+                        color: #000;
+                        transition: 0.3s;
+                        border-radius: 4px;
+                        font-weight: 600;
+                        .icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 24px;
+                        }
+                    }
+                    a.active,
+                    a:hover {
+                        background-color: rgb(1, 149, 154);
+                        color: rgb(255, 255, 255);
+                    }
+                }
+                button.sign {
+                    width: 100px;
+                    padding: 10px;
+                    background-color: #f0f0f0;
+                    color: #000;
+                    font-size: 18px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-weight: 500;
+                }
+                button.sign:hover {
+                    background-color: #000;
+                    color: #f0f0f0;
+                }
+            }
+            button.bars {
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+                font-size: 20px;
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .container {
+        header {
+            nav {
+                .right {
+                    width: 90%;
+                    background-color: #8b8b8b;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: 0.3s;
+                    position: absolute;
+                    top: 80px;
+                    right: 20px;
+                    flex-direction: column;
+                    z-index: 500;
+                    ul {
+                        margin: 10px;
+                        flex-direction: column;
+                        a {
+                            margin: 10px;
+                        }
+                    }
+                    button.sign {
+                        margin: 20px;
+                    }
+                }
+                button.bars {
+                    display: block;
+                }
+            }
+        }
+    }
+    .show {
+        max-height: 260px !important;
+        overflow: auto !important;
+        scrollbar-width: none;
+    }
+}

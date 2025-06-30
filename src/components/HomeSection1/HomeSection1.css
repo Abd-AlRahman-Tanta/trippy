@@ -1,0 +1,79 @@
+main {
+    padding: 0 100px;
+    #section1 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        .titles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+            h1 {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .description {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                width: 49%;
+                p {
+                    font-size: 18px;
+                }
+                h1 {
+                    font-size: 34px;
+                    margin-bottom: 20px;
+                }
+            }
+            .imgs {
+                width: 49%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                .img {
+                    flex-grow: 1;
+                    height: 350px;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+        .description.reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    main {
+        padding: 0 40px;
+        #section1 {
+            .description {
+                flex-direction: column-reverse;
+                gap: 40px;
+                .title {
+                    width: 100%;
+                }
+                .imgs {
+                    width: 100%;
+                }
+            }
+            .description.reverse {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
