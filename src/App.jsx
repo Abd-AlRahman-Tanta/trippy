@@ -29,12 +29,12 @@ function App() {
           bars={<FaBars />}
         />
         <Routes>
-          <Route path="/" element={<Hero image="/trippy/public/assets/imgs/homeHero.jpg" title="Your Journey Your Story" desc="Choose Your Favourite Destination." btn="Travel Now" />} />
-          <Route path="/about" element={<Hero image="/trippy/public/assets/imgs/aboutHero.jpg" title="About" />} />
-          <Route path="/services" element={<Hero image="/trippy/public/assets/imgs/servicesHero.jpg" title="Services" />} />
-          <Route path="/contact" element={<Hero image="/trippy/public/assets/imgs/contactAndSignHero.jpg" title="Contact" />} />
-          <Route path="/signin" element={<Hero image="/trippy/public/assets/imgs/contactAndSignHero.jpg" title="Sign Up" />} />
-          <Route path="/login" element={<Hero image="/trippy/public/assets/imgs/log.jpg" title="Log In" />} />
+          <Route path="/" element={<Hero image="/trippy/assets/imgs/homeHero.jpg" title="Your Journey Your Story" desc="Choose Your Favourite Destination." btn="Travel Now" />} />
+          <Route path="/about" element={<Hero image="/trippy/assets/imgs/aboutHero.jpg" title="About" />} />
+          <Route path="/services" element={<Hero image="/trippy/assets/imgs/servicesHero.jpg" title="Services" />} />
+          <Route path="/contact" element={<Hero image="/trippy/assets/imgs/contactAndSignHero.jpg" title="Contact" />} />
+          <Route path="/signin" element={<Hero image="/trippy/assets/imgs/contactAndSignHero.jpg" title="Sign Up" />} />
+          <Route path="/login" element={<Hero image="/trippy/assets/imgs/log.jpg" title="Log In" />} />
         </Routes>
       </header>
       <Routes>
@@ -46,11 +46,11 @@ function App() {
                   { head: "Popular Destinations", para: "Tours dive you the opportunity to see a lot, within a time frame." }
                 ]} />
               <Descripton images=
-                {["/trippy/public/assets/imgs/p3.jpg", "/trippy/public/assets/imgs/p5.jpg"]}
+                {["/trippy/assets/imgs/p3.jpg", "/trippy/assets/imgs/p5.jpg"]}
                 title={"Mt. Daguldul, Batangas"}
                 para={"One of the most iconic views in luzon, Mt. Taal boosts a Volcano inside a lake inside an island. If you fancy a closer look, the hike up to the crater is a mere 45 minutes, and is easy enough for beginners. Guides will assist you most of the way, and you'll see the peculiar environment found on an active volcano, including volcanic rocks and steam vents. The hike can be dusty and hot, so plan for an early morning trip, and then unwind with some bulalo before heading back home!"} />
               <Descripton rev={true}
-                images={["/trippy/public/assets/imgs/p2.jpg", "/trippy/public/assets/imgs/p1.jpg"]}
+                images={["/trippy/assets/imgs/p2.jpg", "/trippy/assets/imgs/p1.jpg"]}
                 title={"Taal Volcano, Batangas"}
                 para={"A nice trek in southern Batangas is the coastal mountain of San Juan, Mt. Daguldul. The name ‘Daguldul’ or ‘Daguldol’ has been used since olden days. It has an onomatopoeic feeling – that of suspense and grandness. Maybe it describes the grandeur of the range and the abrupt rolling of its slopes.Actually a small mountain range, Mt. Daguldul has several ‘gems’ to offer. First, there is the unique seascape that greets the hiker on the intial beach trail. Then, there is trail, moderate in difficulty, passing by woodlands and light forests. In some parts, the greenery is total"} />
             </HomeSection1>
@@ -61,9 +61,9 @@ function App() {
                 ]} />
               <Cards items=
                 {[
-                  { image: "/trippy/public/assets/imgs/p3.jpg", title: "Trip in Indonesia", desc: "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea" },
-                  { image: "/trippy/public/assets/imgs/p5.jpg", title: "Trip in Malaysia", desc: "Malaysia, is a country in Southeast Asia. The federal constitutional monarchy consists of thirteen states and three federal territories, separated by the South China Sea into two regions, Peninsular Malaysia and Borneo's East Malaysia" },
-                  { image: "/trippy/public/assets/imgs/p4.jpg", title: "Trip in France", desc: "France, officially the French Republic is a transcontinental country predominantly located in Western Europe and spanning overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans." }
+                  { image: "/trippy/assets/imgs/p3.jpg", title: "Trip in Indonesia", desc: "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea" },
+                  { image: "/trippy/assets/imgs/p5.jpg", title: "Trip in Malaysia", desc: "Malaysia, is a country in Southeast Asia. The federal constitutional monarchy consists of thirteen states and three federal territories, separated by the South China Sea into two regions, Peninsular Malaysia and Borneo's East Malaysia" },
+                  { image: "/trippy/assets/imgs/p4.jpg", title: "Trip in France", desc: "France, officially the French Republic is a transcontinental country predominantly located in Western Europe and spanning overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans." }
                 ]} />
             </HomeSection2>
           </main>
@@ -96,9 +96,9 @@ function App() {
                 ]} />
               <Cards items=
                 {[
-                  { image: "/trippy/public/assets/imgs/p3.jpg", title: "Trip in Indonesia", desc: "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea" },
-                  { image: "/trippy/public/assets/imgs/p5.jpg", title: "Trip in Malaysia", desc: "Malaysia, is a country in Southeast Asia. The federal constitutional monarchy consists of thirteen states and three federal territories, separated by the South China Sea into two regions, Peninsular Malaysia and Borneo's East Malaysia" },
-                  { image: "/trippy/public/assets/imgs/p4.jpg", title: "Trip in France", desc: "France, officially the French Republic is a transcontinental country predominantly located in Western Europe and spanning overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans." }
+                  { image: "/trippy/assets/imgs/p3.jpg", title: "Trip in Indonesia", desc: "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania between the Indian and Pacific oceans. It consists of over 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea" },
+                  { image: "/trippy/assets/imgs/p5.jpg", title: "Trip in Malaysia", desc: "Malaysia, is a country in Southeast Asia. The federal constitutional monarchy consists of thirteen states and three federal territories, separated by the South China Sea into two regions, Peninsular Malaysia and Borneo's East Malaysia" },
+                  { image: "/trippy/assets/imgs/p4.jpg", title: "Trip in France", desc: "France, officially the French Republic is a transcontinental country predominantly located in Western Europe and spanning overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans." }
                 ]} />
             </HomeSection2>
           </main>
